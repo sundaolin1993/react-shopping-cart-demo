@@ -36,10 +36,10 @@ class Cart extends React.Component {
           <Breadcrumb.Item>购物车</Breadcrumb.Item>
         </Breadcrumb>
         <Table border={true} style={{ width: '100%' }} columns={this.state.columns} data={this.state.products} maxHeight={200} />
-        <div>
+        {/* <div>
           <p>已选 <span>xxx</span> 件商品，总价：<span>xxx</span></p>
           <Button type="danger">结算</Button>
-        </div>
+        </div> */}
       </div >
     )
   }
