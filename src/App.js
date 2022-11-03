@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import style from './style/App.module.css';
+import Cart from './components/cart';
+import PopCart from './components/popCart';
+import Products from './components/products';
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={style.app} >
+      <span className={style.title}>Vuex - 购物车示例</span>
+      <span className={style.pop_cart}><PopCart /></span>
+      <Routes>
+        <Route exact path="/cart" element={<Cart />}></Route>
+        <Route exact path="/" element={<Products />}></Route>
+      </Routes>
     </div>
   );
 }

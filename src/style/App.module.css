@@ -1,0 +1,14 @@
+.app {
+  width: 980px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.pop_cart {
+  float: right;
+}
+
+.title {
+  font-size: 20px;
+  color: #333;
+}
